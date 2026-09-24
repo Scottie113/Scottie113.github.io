@@ -1,0 +1,11 @@
+<a class="card project-card" [routerLink]="['/projects', project().slug]">
+  <span class="category">{{ project().category }}</span>
+  <h3>{{ project().title }}</h3>
+  <p>{{ project().summary }}</p>
+  <ul class="tech-list">
+    @for (tech of project().technologies; track tech) {
+      <li class="tag">{{ tech }}</li>
+    }
+  </ul>
+  <span class="view-link">View project →</span>
+</a>

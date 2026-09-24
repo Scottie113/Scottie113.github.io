@@ -1,0 +1,78 @@
+.detail {
+  max-width: 760px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+  color: var(--color-accent-strong);
+}
+
+.category {
+  display: block;
+  color: var(--color-accent-strong);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin: 0.5rem 0 0.75rem;
+}
+
+.summary {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  font-size: 1.02rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}

@@ -1,0 +1,8 @@
+<div class="card skill-card">
+  <h3>{{ group().category }}</h3>
+  <ul>
+    @for (item of group().items; track item) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+</div>

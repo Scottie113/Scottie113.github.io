@@ -1,0 +1,28 @@
+.skill-card {
+  padding: 1.5rem 1.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--color-accent-strong);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+li {
+  font-size: 0.92rem;
+  color: var(--color-text);
+}
+
+li:not(:last-child)::after {
+  content: '•';
+  margin-left: 0.75rem;
+  color: var(--color-border);
+}

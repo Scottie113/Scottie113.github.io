@@ -1,0 +1,47 @@
+<section class="section">
+  <div class="container">
+    <app-section-header eyebrow="Career" title="Experience" />
+
+    <div class="timeline">
+      @for (entry of experience; track entry.organization + entry.role) {
+        <article class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="dates">{{ entry.start }} – {{ entry.end }}</span>
+          </div>
+          <div class="timeline-content">
+            <h3>{{ entry.role }}</h3>
+            <p class="org">{{ entry.organization }} · {{ entry.location }}</p>
+            <p class="summary">{{ entry.summary }}</p>
+            <ul>
+              @for (point of entry.highlights; track point) {
+                <li>{{ point }}</li>
+              }
+            </ul>
+          </div>
+        </article>
+      }
+    </div>
+
+    <app-section-header eyebrow="Background" title="Education" />
+    <div class="timeline">
+      @for (entry of education; track entry.institution) {
+        <article class="timeline-item card">
+          <div class="timeline-meta">
+            <span class="dates">{{ entry.start }} – {{ entry.end }}</span>
+          </div>
+          <div class="timeline-content">
+            <h3>{{ entry.degree }}</h3>
+            <p class="org">{{ entry.institution }} · {{ entry.location }}</p>
+            @if (entry.details) {
+              <ul>
+                @for (point of entry.details; track point) {
+                  <li>{{ point }}</li>
+                }
+              </ul>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

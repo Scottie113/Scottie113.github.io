@@ -1,0 +1,42 @@
+@if (project(); as p) {
+  <section class="section">
+    <div class="container detail">
+      <a class="back-link" routerLink="/projects">← All projects</a>
+
+      <span class="category">{{ p.category }}</span>
+      <h1>{{ p.title }}</h1>
+      <p class="summary">{{ p.summary }}</p>
+
+      <div class="tech-list">
+        @for (tech of p.technologies; track tech) {
+          <span class="tag">{{ tech }}</span>
+        }
+      </div>
+
+      <div class="links">
+        @if (p.github) {
+          <a class="btn btn-outline" [href]="p.github" target="_blank" rel="noopener">Source</a>
+        }
+        @if (p.demo) {
+          <a class="btn btn-primary" [href]="p.demo" target="_blank" rel="noopener">Live Demo</a>
+        }
+      </div>
+
+      <p class="description">{{ p.description }}</p>
+
+      <h2>Highlights</h2>
+      <ul class="highlights">
+        @for (point of p.highlights; track point) {
+          <li>{{ point }}</li>
+        }
+      </ul>
+    </div>
+  </section>
+} @else {
+  <section class="section">
+    <div class="container">
+      <p>Project not found.</p>
+      <a class="btn btn-outline" routerLink="/projects">Back to projects</a>
+    </div>
+  </section>
+}

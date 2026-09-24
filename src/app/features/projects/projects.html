@@ -1,0 +1,14 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Work"
+      title="Projects"
+      subtitle="Full-stack applications, XR experiences, and R&D work."
+    />
+    <div class="project-grid">
+      @for (project of projects; track project.slug) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+.about-body {
+  max-width: 680px;
+  font-size: 1.02rem;
+  margin-bottom: 3rem;
+}
+
+.about-body p {
+  color: var(--color-text);
+}
+
+.skills-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}

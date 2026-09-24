@@ -1,0 +1,27 @@
+<section class="section">
+  <div class="container">
+    <app-section-header eyebrow="About" title="About Me" />
+
+    <div class="about-body">
+      <!-- TODO: replace with your real bio -->
+      <p>
+        I'm {{ profile.name }}, a software engineer focused on building web applications and
+        immersive (XR) systems. I enjoy working across the stack — from data-driven front-end
+        architecture to backend APIs — and I have a particular interest in AR/VR, 3D graphics,
+        and applying emerging technology to real-world training and education problems.
+      </p>
+      <p>
+        My background spans full-stack web development and XR engineering, with hands-on work in
+        Unity, WebXR, and modern JavaScript/TypeScript frameworks. I care about writing code that
+        is maintainable and well-architected, not just code that works.
+      </p>
+    </div>
+
+    <h3 class="skills-heading">Technologies I work with</h3>
+    <div class="skill-grid">
+      @for (group of skillGroups; track group.category) {
+        <app-skill-card [group]="group" />
+      }
+    </div>
+  </div>
+</section>

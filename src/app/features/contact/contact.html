@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Get in Touch"
+      title="Contact"
+      subtitle="Open to full-stack, frontend, and XR engineering opportunities."
+    />
+
+    <div class="contact-grid">
+      <a class="card contact-item" [href]="'mailto:' + profile.email">
+        <span class="label">Email</span>
+        <span class="value">{{ profile.email }}</span>
+      </a>
+      <a class="card contact-item" [href]="profile.github" target="_blank" rel="noopener">
+        <span class="label">GitHub</span>
+        <span class="value">github.com/scottie113</span>
+      </a>
+      <a class="card contact-item" [href]="profile.linkedin" target="_blank" rel="noopener">
+        <span class="label">LinkedIn</span>
+        <span class="value">View profile</span>
+      </a>
+    </div>
+  </div>
+</section>

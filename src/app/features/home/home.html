@@ -1,0 +1,39 @@
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">Portfolio</span>
+    <h1>{{ profile.name }}</h1>
+    <p class="tagline">{{ profile.tagline }}</p>
+    <p class="summary">{{ profile.summary }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" routerLink="/projects">View Projects</a>
+      <a class="btn btn-outline" [href]="profile.github" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-outline" [href]="profile.resumeUrl" target="_blank" rel="noopener">Download Résumé</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Selected Work"
+      title="Featured Projects"
+      subtitle="A sample of engineering and XR projects, spanning full-stack apps and immersive systems."
+    />
+    <div class="project-grid">
+      @for (project of featuredProjects; track project.slug) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section tech-section">
+  <div class="container">
+    <app-section-header eyebrow="Toolbox" title="Selected Technologies" />
+    <div class="skill-grid">
+      @for (group of skillGroups; track group.category) {
+        <app-skill-card [group]="group" />
+      }
+    </div>
+  </div>
+</section>
