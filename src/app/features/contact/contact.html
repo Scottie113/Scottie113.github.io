@@ -7,6 +7,10 @@
     />
 
     <div class="contact-grid">
+      <div class="card contact-item">
+        <span class="label">Location</span>
+        <span class="value">{{ profile.location }}</span>
+      </div>
       <a class="card contact-item" [href]="'mailto:' + profile.email">
         <span class="label">Email</span>
         <span class="value">{{ profile.email }}</span>
