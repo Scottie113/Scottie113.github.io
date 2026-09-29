@@ -34,8 +34,20 @@
       @for (entry of teaching; track entry.role + entry.organization) {
         <article class="card list-item">
           <h4>{{ entry.role }}</h4>
-          <p class="org">{{ entry.organization }} · {{ entry.period }}</p>
+          <p class="org">
+            {{ entry.organization }}
+            @if (entry.period) {
+              · {{ entry.period }}
+            }
+          </p>
           <p>{{ entry.description }}</p>
+          @if (entry.highlights?.length) {
+            <ul class="teaching-highlights">
+              @for (point of entry.highlights; track point) {
+                <li>{{ point }}</li>
+              }
+            </ul>
+          }
         </article>
       }
     </div>
