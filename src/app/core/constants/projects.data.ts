@@ -67,4 +67,44 @@ export const PROJECTS: Project[] = [
     ],
     featured: true,
   },
+  {
+    title: 'CleanroomVR',
+    slug: 'cleanroom-vr',
+    summary: 'VR lab simulation of a real cleanroom, with an AI assistant that guides students through procedure.',
+    description:
+      'A virtual reality recreation of a real cleanroom lab that lets students practice procedure and ' +
+      'equipment handling before ever entering the physical space. An integrated AI assistant walks ' +
+      'students through each step of the process, answering questions and correcting mistakes in real time.',
+    category: 'XR / Graphics',
+    technologies: ['Unity', 'C#', 'VR', 'AI'],
+    highlights: [
+      'Rebuilt a real cleanroom lab environment and equipment in VR for training use',
+      'Integrated an AI assistant to guide students through lab procedure step by step',
+      'Collaborated on 3D modeling, interaction design, and simulation logic',
+    ],
+    github: 'https://github.com/fwangyt/NewVRCleanRoom',
+    featured: false,
+    role: 'Collaborator',
+  },
+  {
+    title: 'Geoglyph VR',
+    slug: 'geoglyph-vr',
+    summary:
+      'VR reconstruction of an ancient Amazonian civilization, rebuilt on real LiDAR scan data with scanned artifacts.',
+    description:
+      'A virtual reality reconstruction of an Amazonian civilization that existed thousands of years ago, ' +
+      'built directly on top of real LiDAR scan data of the site. The reconstructed structures are paired ' +
+      'with Artec 3D scans of period artifacts, letting people explore the civilization and its objects in ' +
+      'an immersive, historically grounded environment.',
+    category: 'XR / Graphics',
+    technologies: ['Unity', 'C#', 'VR', 'LiDAR', '3D Scanning'],
+    highlights: [
+      'Reconstructed ancient structures in VR directly on top of LiDAR survey data',
+      'Integrated Artec 3D scans of real artifacts into the immersive environment',
+      'Collaborated on translating archaeological scan data into an explorable 3D space',
+    ],
+    github: 'https://github.com/NickT526/GeoglyphVRSmall',
+    featured: false,
+    role: 'Collaborator',
+  },
 ];

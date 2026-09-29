@@ -3,7 +3,12 @@
     <div class="container detail">
       <a class="back-link" routerLink="/projects">← All projects</a>
 
-      <span class="category">{{ p.category }}</span>
+      <div class="meta-row">
+        <span class="category">{{ p.category }}</span>
+        @if (p.role) {
+          <span class="role-badge">{{ p.role }}</span>
+        }
+      </div>
       <h1>{{ p.title }}</h1>
       <p class="summary">{{ p.summary }}</p>
 
