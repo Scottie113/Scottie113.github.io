@@ -2,7 +2,7 @@ export interface ExperienceEntry {
   role: string;
   organization: string;
   location: string;
-  start: string;
+  start?: string;
   end: string;
   summary: string;
   highlights: string[];

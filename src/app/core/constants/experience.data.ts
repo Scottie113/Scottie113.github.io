@@ -17,12 +17,29 @@ export const EXPERIENCE: ExperienceEntry[] = [
   },
 ];
 
+export const LEADERSHIP: ExperienceEntry[] = [
+  {
+    role: 'Co-Founder',
+    organization: 'University of Missouri Virtual Reality Organization',
+    location: 'Columbia, MO',
+    end: 'Undergraduate',
+    summary:
+      'Co-founded and helped establish a student organization dedicated to virtual reality ' +
+      'and immersive technology at the University of Missouri.',
+    highlights: [],
+  },
+];
+
 export const EDUCATION: EducationEntry[] = [
   {
     degree: 'Master of Science, Computer Science',
     institution: 'University of Missouri — College of Engineering',
     location: 'Columbia, MO',
     end: '2021',
+    details: [
+      'Research focus: Extended Reality (XR) and Artificial Intelligence',
+      'Thesis: designed and built an XR application for education',
+    ],
   },
   {
     degree: 'Bachelor of Science, Information Technology (Minor: Computer Science)',

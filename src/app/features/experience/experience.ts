@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionHeader } from '../../shared/components/section-header/section-header';
-import { EDUCATION, EXPERIENCE } from '../../core/constants/experience.data';
+import { EDUCATION, EXPERIENCE, LEADERSHIP } from '../../core/constants/experience.data';
 
 @Component({
   selector: 'app-experience',
@@ -10,5 +10,6 @@ import { EDUCATION, EXPERIENCE } from '../../core/constants/experience.data';
 })
 export class Experience {
   readonly experience = EXPERIENCE;
+  readonly leadership = LEADERSHIP;
   readonly education = EDUCATION;
 }
