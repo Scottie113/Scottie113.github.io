@@ -19,11 +19,16 @@ export const EXPERIENCE: ExperienceEntry[] = [
 
 export const EDUCATION: EducationEntry[] = [
   {
-    degree: 'Your Degree',
-    institution: 'Your University',
-    location: 'City, State',
-    start: '20XX',
-    end: '20XX',
-    details: ['Relevant coursework, honors, or thesis topic'],
+    degree: 'Master of Science, Computer Science',
+    institution: 'University of Missouri — College of Engineering',
+    location: 'Columbia, MO',
+    end: '2021',
+  },
+  {
+    degree: 'Bachelor of Science, Information Technology (Minor: Computer Science)',
+    institution: 'University of Missouri — College of Engineering',
+    location: 'Columbia, MO',
+    end: '2018',
+    details: ['Outstanding Senior Award, Information Technology'],
   },
 ];

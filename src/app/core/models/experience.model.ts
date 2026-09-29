@@ -12,7 +12,7 @@ export interface EducationEntry {
   degree: string;
   institution: string;
   location: string;
-  start: string;
+  start?: string;
   end: string;
   details?: string[];
 }

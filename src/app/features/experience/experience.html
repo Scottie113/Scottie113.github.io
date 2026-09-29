@@ -24,10 +24,16 @@
 
     <app-section-header eyebrow="Background" title="Education" />
     <div class="timeline">
-      @for (entry of education; track entry.institution) {
+      @for (entry of education; track entry.degree) {
         <article class="timeline-item card">
           <div class="timeline-meta">
-            <span class="dates">{{ entry.start }} – {{ entry.end }}</span>
+            <span class="dates">
+              @if (entry.start) {
+                {{ entry.start }} – {{ entry.end }}
+              } @else {
+                {{ entry.end }}
+              }
+            </span>
           </div>
           <div class="timeline-content">
             <h3>{{ entry.degree }}</h3>
