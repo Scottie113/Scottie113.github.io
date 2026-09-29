@@ -9,7 +9,13 @@
     <h3 class="group-heading">Publications</h3>
     <div class="list">
       @for (pub of publications; track pub.title) {
-        <article class="card list-item">
+        <article class="card list-item pub-item">
+          <div class="pub-meta-row">
+            <span class="year">{{ pub.year }}</span>
+            @if (pub.note) {
+              <span class="note-badge">{{ pub.note }}</span>
+            }
+          </div>
           <h4>
             @if (pub.link) {
               <a [href]="pub.link" target="_blank" rel="noopener">{{ pub.title }}</a>
@@ -17,7 +23,8 @@
               {{ pub.title }}
             }
           </h4>
-          <p>{{ pub.venue }} · {{ pub.year }}</p>
+          <p class="authors">{{ pub.authors.join(', ') }}</p>
+          <p class="venue">{{ pub.venue }}</p>
         </article>
       }
     </div>

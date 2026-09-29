@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionHeader } from '../../shared/components/section-header/section-header';
-
-interface PublicationEntry {
-  title: string;
-  venue: string;
-  year: string;
-  link?: string;
-}
+import { PUBLICATIONS } from '../../core/constants/publications.data';
 
 interface TeachingEntry {
   role: string;
@@ -15,7 +9,7 @@ interface TeachingEntry {
   description: string;
 }
 
-// TODO: replace with your real publications and teaching experience.
+// TODO: replace with your real teaching experience.
 @Component({
   selector: 'app-research',
   imports: [SectionHeader],
@@ -23,13 +17,7 @@ interface TeachingEntry {
   styleUrl: './research.scss',
 })
 export class Research {
-  readonly publications: PublicationEntry[] = [
-    {
-      title: 'Add your publication title here',
-      venue: 'Conference / Journal name',
-      year: '20XX',
-    },
-  ];
+  readonly publications = PUBLICATIONS;
 
   readonly teaching: TeachingEntry[] = [
     {

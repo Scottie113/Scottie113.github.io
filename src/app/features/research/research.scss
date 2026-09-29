@@ -35,3 +35,40 @@
 .list-item p:last-child {
   margin-bottom: 0;
 }
+
+.pub-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-item .year {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.note-badge {
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pub-item h4 {
+  line-height: 1.4;
+}
+
+.pub-item .authors {
+  font-size: 0.88rem;
+  margin-bottom: 0.15rem;
+}
+
+.pub-item .venue {
+  font-size: 0.88rem;
+  font-style: italic;
+}

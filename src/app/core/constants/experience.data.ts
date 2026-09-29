@@ -38,7 +38,8 @@ export const EDUCATION: EducationEntry[] = [
     end: '2021',
     details: [
       'Research focus: Extended Reality (XR) and Artificial Intelligence',
-      'Thesis: designed and built an XR application for education',
+      'Thesis: "Increase Students Learning Effectiveness and Promote Active Learning in Sexual ' +
+        'Health and Body Image Through VR Technology"',
     ],
   },
   {
