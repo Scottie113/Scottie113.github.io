@@ -26,6 +26,11 @@
   text-transform: uppercase;
 }
 
+.role-badge.video-badge {
+  border-color: var(--color-accent);
+  color: var(--color-accent-strong);
+}
+
 .role-badge {
   padding: 0.15rem 0.5rem;
   border-radius: 999px;

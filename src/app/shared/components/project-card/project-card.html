@@ -4,6 +4,9 @@
     @if (project().role) {
       <span class="role-badge">{{ project().role }}</span>
     }
+    @if (project().videos?.length) {
+      <span class="role-badge video-badge">Video</span>
+    }
   </div>
   <h3>{{ project().title }}</h3>
   <p>{{ project().summary }}</p>

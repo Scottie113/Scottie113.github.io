@@ -70,21 +70,102 @@ export const PROJECTS: Project[] = [
   {
     title: 'CleanroomVR',
     slug: 'cleanroom-vr',
-    summary: 'VR lab simulation of a real cleanroom, with an AI assistant that guides students through procedure.',
+    summary: 'VR lab simulation of a real cleanroom, with a voice-activated AI assistant that guides students through procedure.',
     description:
-      'A virtual reality recreation of a real cleanroom lab that lets students practice procedure and ' +
-      'equipment handling before ever entering the physical space. An integrated AI assistant walks ' +
-      'students through each step of the process, answering questions and correcting mistakes in real time.',
+      'A virtual reality recreation of a real lab, built to train students on cleanroom procedures and ' +
+      'equipment handling before they ever enter the physical space. The simulation combines eye-tracking ' +
+      'data, video tutorials, and a voice-activated AI assistant (say "Hey Nova") with spatial awareness ' +
+      'and retrieval-augmented generation (RAG), so it can be updated as the lab changes. Students can ' +
+      'ask Nova when they get lost, forget a step, or need to know what they are doing wrong. An in-world ' +
+      'info pad keeps trainees on track and lets them rewatch the training video.',
     category: 'XR / Graphics',
-    technologies: ['Unity', 'C#', 'VR', 'AI'],
+    technologies: ['Unity', 'C#', 'VR', 'AI', 'RAG', 'Eye Tracking', 'Voice Interaction'],
     highlights: [
-      'Rebuilt a real cleanroom lab environment and equipment in VR for training use',
-      'Integrated an AI assistant to guide students through lab procedure step by step',
-      'Collaborated on 3D modeling, interaction design, and simulation logic',
+      'Rebuilt a real lab environment and equipment in VR for hands-on procedure training',
+      'Voice-activated AI assistant ("Hey Nova") with spatial awareness of the scene, using RAG so its knowledge can be updated as procedures change',
+      'Captured eye-tracking data and embedded video tutorials to support and evaluate learning',
+      'In-world info pad for step tracking and on-demand training video playback',
     ],
     github: 'https://github.com/fwangyt/NewVRCleanRoom',
     featured: false,
     role: 'Collaborator',
+    videos: [
+      {
+        title: 'RIE Module Demo',
+        description: 'Walkthrough of the RIE lab training module.',
+        src: 'videos/cleanroom-rie-module-demo.mp4',
+        poster: 'videos/posters/cleanroom-rie-module-demo.jpg',
+        duration: '9:15',
+      },
+      {
+        title: 'Info Pad & Training Video',
+        description: 'The in-world info pad that keeps students on track and plays the training video.',
+        src: 'videos/cleanroom-info-pad.mp4',
+        poster: 'videos/posters/cleanroom-info-pad.jpg',
+        duration: '3:43',
+      },
+      {
+        title: 'Clean Room Demo (11.5.24)',
+        description: 'Short capture of the clean room simulation.',
+        src: 'videos/cleanroom-demo-11-5-24.mp4',
+        poster: 'videos/posters/cleanroom-demo-11-5-24.jpg',
+        duration: '0:38',
+      },
+    ],
+  },
+  {
+    title: 'Nursing VR Simulation',
+    slug: 'nursing-vr-simulation',
+    summary: 'Realistic hospital-procedure training for nursing students, built with motion tracking and 3D scanning.',
+    description:
+      'A VR training simulation for nursing students built to recreate realistic hospital procedures. ' +
+      'The team worked with real doctors, using Neuron motion trackers and an Artec scanner to make the ' +
+      'scenarios as realistic as possible for training students.',
+    category: 'XR / Graphics',
+    technologies: ['VR', 'Motion Capture', 'Artec 3D Scanning', '3D Simulation'],
+    highlights: [
+      'Used Neuron motion trackers to capture realistic movement',
+      'Used an Artec scanner to improve the realism of the scenario',
+      'Worked with real doctors to model realistic hospital procedures for student training',
+    ],
+    featured: false,
+    videos: [
+      {
+        title: 'Nursing Simulation Demo',
+        description: 'Demo of the nursing procedure training scenario.',
+        src: 'videos/nursing-simulation-demo.mp4',
+        poster: 'videos/posters/nursing-simulation-demo.jpg',
+        duration: '3:28',
+      },
+    ],
+  },
+  {
+    title: 'Shape',
+    slug: 'shape',
+    summary: 'An early VR application for the Oculus Go teaching sexual awareness through question-based scenarios.',
+    description:
+      'One of my earliest VR applications, built for the Oculus Go. Shape uses question-based scenarios ' +
+      'and educational content to inform students about sexual awareness, including modeled anatomy used ' +
+      'to teach about contraception.',
+    category: 'XR / Graphics',
+    technologies: ['Oculus Go', 'VR', 'Unity', 'C#', 'Educational Content'],
+    highlights: [
+      'Built an early VR application for the Oculus Go headset',
+      'Designed question-based scenarios to engage students, including Jeopardy-style, Healthy Relationships, and Body Image modules',
+      'Delivered educational content on sexual awareness, including contraception, in an interactive format',
+    ],
+    featured: false,
+    contentWarning:
+      'Content notice: this project includes modeled genitalia, shown for educational purposes to teach students about contraception.',
+    videos: [
+      {
+        title: 'Shape Walkthrough',
+        description: 'Full walkthrough of the Shape application.',
+        src: 'videos/shape-walkthrough.mp4',
+        poster: 'videos/posters/shape-walkthrough.jpg',
+        duration: '23:40',
+      },
+    ],
   },
   {
     title: 'Geoglyph VR',

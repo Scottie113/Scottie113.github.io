@@ -1,3 +1,11 @@
+export interface ProjectVideo {
+  title: string;
+  description?: string;
+  src: string;
+  poster?: string;
+  duration?: string;
+}
+
 export interface Project {
   title: string;
   slug: string;
@@ -10,4 +18,6 @@ export interface Project {
   demo?: string;
   featured: boolean;
   role?: string;
+  videos?: ProjectVideo[];
+  contentWarning?: string;
 }

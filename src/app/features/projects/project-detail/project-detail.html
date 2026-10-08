@@ -27,6 +27,40 @@
         }
       </div>
 
+      @if (p.videos?.length) {
+        <section class="videos" aria-label="Project videos">
+          <h2>Watch</h2>
+          @if (p.contentWarning) {
+            <p class="content-warning" role="note">{{ p.contentWarning }}</p>
+          }
+          <div class="video-list">
+            @for (video of p.videos; track video.src) {
+              <figure class="video-item">
+                <video
+                  controls
+                  preload="none"
+                  playsinline
+                  [attr.poster]="video.poster"
+                  [attr.aria-label]="video.title"
+                >
+                  <source [src]="video.src" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+                <figcaption>
+                  <strong>{{ video.title }}</strong>
+                  @if (video.duration) {
+                    <span class="duration">{{ video.duration }}</span>
+                  }
+                  @if (video.description) {
+                    <span class="video-desc">{{ video.description }}</span>
+                  }
+                </figcaption>
+              </figure>
+            }
+          </div>
+        </section>
+      }
+
       <p class="description">{{ p.description }}</p>
 
       <h2>Highlights</h2>
