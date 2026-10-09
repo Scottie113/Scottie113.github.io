@@ -187,5 +187,14 @@ export const PROJECTS: Project[] = [
     github: 'https://github.com/NickT526/GeoglyphVRSmall',
     featured: false,
     role: 'Collaborator',
+    videos: [
+      {
+        title: 'Geoglyph VR Demo',
+        description: 'Capture of the reconstructed Amazonian settlement running in Unity.',
+        src: 'videos/geoglyph-vr-demo.mp4',
+        poster: 'videos/posters/geoglyph-vr-demo.jpg',
+        duration: '0:41',
+      },
+    ],
   },
 ];
